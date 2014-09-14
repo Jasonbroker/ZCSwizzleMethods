@@ -1,6 +1,6 @@
 ##ZCSwizzle
 
-This is a catergray 4 iOS objC 2.0+.
+This is a catergray 4 iOS2.0+, objC 2.0+.
 
 It contains 2 main methods to exchange methods (expecially for system methods);
 
@@ -17,3 +17,5 @@ IT IS LIGHTWEIGHT FRAMEWORK AND OSX IS NOT SUPPORTED!
 I am an iOS developer and OS X is beyond me. Sry guys.
 
 Hopefully, you will enjoy in it.
+
+license: MIT 
