@@ -16,6 +16,12 @@ IT IS LIGHTWEIGHT FRAMEWORK AND OSX IS NOT SUPPORTED!
 
 I am an iOS developer and OS X is beyond me. Sry guys.
 
-Hopefully, you will enjoy in it.
+Simply use it:
+
+  + (BOOL)zc_swizzleMethod:(SEL)origSelector withMethod:(SEL)altSelector error:(NSError**)error;
+
+  + (BOOL)zc_swizzleClassMethod:(SEL)origSelector withClassMethod:(SEL)altSelector error:(NSError**)error
+
 
 license: MIT 
+
