@@ -1,4 +1,4 @@
-##ZCSwizzle
+#ZCSwizzle
 
 This is a catergray 4 iOS2.0+, objC 2.0+.
 
@@ -18,9 +18,8 @@ I am an iOS developer and OS X is beyond me. Sry guys.
 
 Simply use it:
 
-  + (BOOL)zc_swizzleMethod:(SEL)origSelector withMethod:(SEL)altSelector error:(NSError**)error;
-
-  + (BOOL)zc_swizzleClassMethod:(SEL)origSelector withClassMethod:(SEL)altSelector error:(NSError**)error
+    + (BOOL)zc_swizzleMethod:(SEL)origSelector withMethod:(SEL)altSelector error:(NSError**)error;
+    + (BOOL)zc_swizzleClassMethod:(SEL)origSelector withClassMethod:(SEL)altSelector error:(NSError**)error
 
 
 license: MIT 
