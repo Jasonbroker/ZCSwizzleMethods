@@ -18,9 +18,13 @@ I am an iOS developer and OS X is beyond me. Sry guys.
 
 Simply use it:
 
-    + (BOOL)zc_swizzleMethod:(SEL)origSelector withMethod:(SEL)altSelector error:(NSError**)error;
-    + (BOOL)zc_swizzleClassMethod:(SEL)origSelector withClassMethod:(SEL)altSelector error:(NSError**)error
 
+	+ (BOOL)zc_swizzleMethod:(SEL)origSelector newMethod:(SEL)altSelector error:(NSError**)error;
+	+ (BOOL)zc_swizzleClassMethod:(SEL)origSelector newMethod:(SEL)altSelector error:(NSError**)error;
+
+![Smaller icon](./sample.png)
+
+The demo shows a simple application for method swizzling, which font of the Label could randomly changed after every lauch.
 
 license: MIT 
 
