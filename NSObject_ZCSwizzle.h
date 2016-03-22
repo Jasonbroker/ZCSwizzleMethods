@@ -10,9 +10,9 @@
 
 @interface NSObject (ZCSwizzle)
 
-+ (BOOL)zc_swizzleMethod:(SEL)origSelector withMethod:(SEL)altSelector error:(NSError**)error;
++ (BOOL)zc_swizzleMethod:(SEL)origSelector newMethod:(SEL)altSelector error:(NSError**)error;
 
-+ (BOOL)zc_swizzleClassMethod:(SEL)origSelector withClassMethod:(SEL)altSelector error:(NSError**)error
++ (BOOL)zc_swizzleClassMethod:(SEL)origSelector newMethod:(SEL)altSelector error:(NSError**)error;
 
 
 @end

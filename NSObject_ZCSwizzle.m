@@ -24,7 +24,7 @@ userInfo:[NSDictionary dictionaryWithObject:errStr forKey:NSLocalizedDescription
 
 @implementation NSObject (ZCSwizzle)
 
-+ (BOOL)zc_swizzleMethod:(SEL)origSelector withMethod:(SEL)altSelector error:(NSError**)error
++ (BOOL)zc_swizzleMethod:(SEL)origSelector newMethod:(SEL)altSelector error:(NSError**)error
 {
     Method origMethod = class_getInstanceMethod(self, origSelector);
     if (nil == origMethod) {
@@ -58,8 +58,21 @@ userInfo:[NSDictionary dictionaryWithObject:errStr forKey:NSLocalizedDescription
     return YES;
 }
 
-+ (BOOL)zc_swizzleClassMethod:(SEL)origSelector withClassMethod:(SEL)altSelector error:(NSError**)error {
-    return [GetClass((id)self) zc_swizzleMethod:origSelector withMethod:origSelector error:error];
++ (BOOL)zc_swizzleClassMethod:(SEL)origSelector newMethod:(SEL)altSelector error:(NSError**)error {
+        
+        Method origMethod = class_getClassMethod([self class], origSelector);
+        if (nil == origMethod) {
+            return NO;
+        }
+        
+        Method altMethod = class_getClassMethod([self class], altSelector);
+        if (nil == altMethod) {
+            return NO;
+        }
+    
+            method_exchangeImplementations(origMethod, altMethod);
+    
+        return YES;
 }
     
 @end
