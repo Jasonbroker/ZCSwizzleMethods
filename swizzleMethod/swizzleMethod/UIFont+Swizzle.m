@@ -7,9 +7,7 @@
 //
 
 #import "UIFont+Swizzle.h"
-#import "NSObject_ZCSwizzle.h"
-#import <objc/runtime.h>
-#import <objc/message.h>
+#import "NSObject+ZCSwizzle.h"
 
 @implementation UIFont (Swizzle)
 
@@ -32,7 +30,10 @@
 }
 + (UIFont *)myboldFontOfSize:(CGFloat)fontSize{
     
-    return [UIFont fontWithName:@"Avenir-Medium" size:fontSize];
+    NSArray *fonts = [UIFont familyNames];
+    NSInteger index = arc4random()%fonts.count;
+    
+    return [UIFont fontWithName:fonts[index] size:18];
 }
 
 

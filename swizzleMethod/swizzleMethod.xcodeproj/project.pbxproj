@@ -14,7 +14,7 @@
 		96A760551CA1371500C9A8D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96A760541CA1371500C9A8D1 /* Assets.xcassets */; };
 		96A760581CA1371500C9A8D1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96A760561CA1371500C9A8D1 /* LaunchScreen.storyboard */; };
 		96A760641CA139B600C9A8D1 /* UIFont+Swizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = 96A760631CA139B600C9A8D1 /* UIFont+Swizzle.m */; };
-		96A7606A1CA14F2B00C9A8D1 /* NSObject_ZCSwizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = 96A760691CA14F2B00C9A8D1 /* NSObject_ZCSwizzle.m */; };
+		96A7606A1CA14F2B00C9A8D1 /* NSObject+ZCSwizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = 96A760691CA14F2B00C9A8D1 /* NSObject+ZCSwizzle.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,8 +30,8 @@
 		96A760591CA1371500C9A8D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		96A760621CA139B600C9A8D1 /* UIFont+Swizzle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+Swizzle.h"; sourceTree = "<group>"; };
 		96A760631CA139B600C9A8D1 /* UIFont+Swizzle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+Swizzle.m"; sourceTree = "<group>"; };
-		96A760681CA14F2B00C9A8D1 /* NSObject_ZCSwizzle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NSObject_ZCSwizzle.h; path = ../../NSObject_ZCSwizzle.h; sourceTree = "<group>"; };
-		96A760691CA14F2B00C9A8D1 /* NSObject_ZCSwizzle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NSObject_ZCSwizzle.m; path = ../../NSObject_ZCSwizzle.m; sourceTree = "<group>"; };
+		96A760681CA14F2B00C9A8D1 /* NSObject+ZCSwizzle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSObject+ZCSwizzle.h"; path = "../../NSObject+ZCSwizzle.h"; sourceTree = "<group>"; };
+		96A760691CA14F2B00C9A8D1 /* NSObject+ZCSwizzle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSObject+ZCSwizzle.m"; path = "../../NSObject+ZCSwizzle.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,8 +64,8 @@
 		96A760471CA1371500C9A8D1 /* swizzleMethod */ = {
 			isa = PBXGroup;
 			children = (
-				96A760681CA14F2B00C9A8D1 /* NSObject_ZCSwizzle.h */,
-				96A760691CA14F2B00C9A8D1 /* NSObject_ZCSwizzle.m */,
+				96A760681CA14F2B00C9A8D1 /* NSObject+ZCSwizzle.h */,
+				96A760691CA14F2B00C9A8D1 /* NSObject+ZCSwizzle.m */,
 				96A760621CA139B600C9A8D1 /* UIFont+Swizzle.h */,
 				96A760631CA139B600C9A8D1 /* UIFont+Swizzle.m */,
 				96A7604B1CA1371500C9A8D1 /* AppDelegate.h */,
@@ -161,7 +161,7 @@
 			files = (
 				96A760501CA1371500C9A8D1 /* ViewController.m in Sources */,
 				96A760641CA139B600C9A8D1 /* UIFont+Swizzle.m in Sources */,
-				96A7606A1CA14F2B00C9A8D1 /* NSObject_ZCSwizzle.m in Sources */,
+				96A7606A1CA14F2B00C9A8D1 /* NSObject+ZCSwizzle.m in Sources */,
 				96A7604D1CA1371500C9A8D1 /* AppDelegate.m in Sources */,
 				96A7604A1CA1371500C9A8D1 /* main.m in Sources */,
 			);
